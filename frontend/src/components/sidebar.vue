@@ -4,39 +4,46 @@
     <h2 v-if="!isClosed" class="logo">Miano's Closet</h2>
     <ul class="nav-links">
       <li>
-        <a href="#">
+        <router-link to="/dashboard">
           <i class="fa fa-fw fa-dashboard"></i>
           <span class="nav-text" v-if="!isClosed">Dashboard</span>
           <span class="tooltip" v-if="isClosed">Dashboard</span>
-        </a>
+        </router-link>
       </li>
       <li>
-        <a href="#">
+        <router-link to="/wardrobe">
+          <i class="fa fa-fw fa-cube"></i>
+          <span class="nav-text" v-if="!isClosed">My Wardrobe</span>
+          <span class="tooltip" v-if="isClosed">My Wardrobe</span>
+        </router-link>
+      </li>
+      <li>
+        <router-link to="/categories">
           <i class="fa fa-fw fa-folder"></i>
           <span class="nav-text" v-if="!isClosed">Categories</span>
           <span class="tooltip" v-if="isClosed">Categories</span>
-        </a>
+        </router-link>
       </li>
       <li>
-        <a href="#">
+        <router-link to="/users">
           <i class="fa fa-fw fa-users"></i>
           <span class="nav-text" v-if="!isClosed">Users</span>
           <span class="tooltip" v-if="isClosed">Users</span>
-        </a>
+        </router-link>
       </li>
       <li>
-        <a href="#">
+        <router-link to="/settings">
           <i class="fa fa-fw fa-cog"></i>
           <span class="nav-text" v-if="!isClosed">Settings</span>
           <span class="tooltip" v-if="isClosed">Settings</span>
-        </a>
+        </router-link>
       </li>
       <li>
-        <a href="#">
+        <router-link to="/logout">
           <i class="fa fa-fw fa-user"></i>
           <span class="nav-text" v-if="!isClosed">Logout</span>
           <span class="tooltip" v-if="isClosed">Logout</span>
-        </a>
+        </router-link>
       </li>
     </ul>
   </div>
@@ -52,9 +59,7 @@ const toggleSidebar = () => {
 };
 </script>
 
-  
- 
-  
+
   <style scoped>
 .sidebar {
   position: fixed;
