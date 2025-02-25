@@ -1,5 +1,6 @@
 <script setup>
 import Sidebar from './components/sidebar.vue'
+import Maincontent from './components/maincontent.vue'
 import TheWelcome from './components/TheWelcome.vue'
 </script>
 
@@ -9,6 +10,7 @@ import TheWelcome from './components/TheWelcome.vue'
   <main>
     <TheWelcome />
     <sidebar />
+    <maincontent />
   </main>
 </template>
 
