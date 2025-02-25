@@ -1,0 +1,6 @@
+@import './base.css';
+
+#app {
+  font-size: medium;
+  padding-left: 20px;
+}
