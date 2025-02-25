@@ -1,8 +1,8 @@
 <template>
     <div class="products-container">
-      <h1>Clothing Collection</h1>
+      <h1>Dashboard</h1>
   
-      <!-- Filters -->
+     
       <div class="filters">
         <input type="text" v-model="search" placeholder="Search clothes..." />
         <select v-model="selectedCategory">
@@ -13,7 +13,7 @@
         </select>
       </div>
   
-      <!-- Product Grid -->
+    
       <div class="product-grid">
         <div v-for="product in filteredProducts" :key="product.id" class="product-card">
           <img :src="product.image" :alt="product.name" />
@@ -33,8 +33,8 @@
   const selectedCategory = ref('');
   
   const products = ref([
-    { id: 1, name: 'Casual T-Shirt', category: 'T-Shirts', price: 250, image: '/shirt.jpeg' },
-    { id: 2, name: 'Old Money Outfit', category: 'Jeans', price: 1500, image: '/oldmoney.jpeg' },
+    { id: 1, name: 'Casual T-Shirt', category: 'T-Shirts', price: 250, image: '/dress1.jpeg' },
+    { id: 2, name: 'Old Money Outfit', category: 'Jeans', price: 1500, image: '/dress1.jpeg' },
     { id: 3, name: 'Floral Dress', category: 'Dresses', price: 2000, image: 'dress1.jpeg' }
   ]);
   
@@ -53,18 +53,18 @@
   <style scoped>
   .products-container {
     padding: 20px;
-    margin-left: 250px; /* Offset for sidebar */
+    margin-left: 250px;
   }
   
   h1 {
     margin-bottom: 20px;
   }
   
-  /* Filters */
+ 
   .filters {
     display: flex;
     gap: 10px;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
   }
   
   .filters input, .filters select {
@@ -72,7 +72,7 @@
     font-size: 16px;
   }
   
-  /* Product Grid */
+ 
   .product-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -104,6 +104,7 @@
     padding: 10px;
     border-radius: 5px;
     cursor: pointer;
+    margin-bottom: 20px;
   }
   </style>
   

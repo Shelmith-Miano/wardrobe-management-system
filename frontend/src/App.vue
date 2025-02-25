@@ -1,16 +1,17 @@
 <script setup>
 import Sidebar from './components/sidebar.vue'
-import Maincontent from './components/maincontent.vue'
-import TheWelcome from './components/TheWelcome.vue'
+import Dashboard from './components/dashboard.vue'
+import 'font-awesome/css/font-awesome.min.css';
+
 </script>
 
 <template>
   
 
   <main>
-    <TheWelcome />
+    
     <sidebar />
-    <maincontent />
+    <dashboard />
   </main>
 </template>
 
