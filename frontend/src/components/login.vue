@@ -22,13 +22,13 @@
   const password = ref('');
   
   const login = () => {
-    // Replace this with your authentication logic
+    
     console.log('Username:', username.value);
     console.log('Password:', password.value);
-    // Example: Check if the username and password are correct
+    
     if (username.value === 'admin' && password.value === 'password') {
       alert('Login successful!');
-      // Redirect to the dashboard or main page
+     
     } else {
       alert('Invalid username or password');
     }
@@ -40,15 +40,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Full height */
-  background-color: #f5f5f5; /* Light grey background */
+  height: 100vh;
+  background-color: #f5f5f5; 
 }
 
 form {
   background: white;
   padding: 20px;
   border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
   width: 100%;
   max-width: 400px;
   text-align: center;

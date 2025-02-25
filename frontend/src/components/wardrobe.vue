@@ -4,7 +4,7 @@
         <i class="fas fa-tshirt"></i> My Wardrobe / Clothing Items
       </h1>
   
-      <!-- Add New Item Section -->
+     
       <div class="add-item">
         <input v-model="newItem.name" placeholder="Enter clothing item name" />
         <input v-model="newItem.category" placeholder="Enter category (Tops, Shoes, etc.)" />
@@ -12,7 +12,7 @@
         <button @click="addItem">Add Item</button>
       </div>
   
-      <!-- Wardrobe Navigation -->
+     
       <div class="wardrobe-nav">
         <button @click="filterCategory('')" :class="{ active: selectedCategory === '' }">
           <i class="fas fa-th-large"></i> All Items
@@ -91,7 +91,7 @@
     };
   
     products.value.push(newProduct);
-    newItem.value = { name: '', category: '', price: '' }; // Reset input fields
+    newItem.value = { name: '', category: '', price: '' }; 
   };
   
   const editProduct = (product) => {
@@ -123,7 +123,7 @@
     gap: 10px;
   }
   
-  /* Add New Item Section */
+
   .add-item {
     margin-bottom: 20px;
     display: flex;
@@ -144,7 +144,7 @@
     cursor: pointer;
   }
   
-  /* Wardrobe Navigation */
+ 
   .wardrobe-nav {
     display: flex;
     gap: 10px;
@@ -166,7 +166,7 @@
     color: white;
   }
   
-  /* Product Grid */
+
   .product-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));

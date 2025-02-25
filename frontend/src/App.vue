@@ -4,9 +4,9 @@ import Sidebar from './components/sidebar.vue';
 
 <template>
   <div class="app-container">
-    <Sidebar /> <!-- Sidebar stays fixed on all pages -->
+    <Sidebar /> 
     <div class="main-content">
-      <router-view /> <!-- Only this part updates when switching pages -->
+      <router-view /> 
     </div>
   </div>
 </template>
@@ -14,13 +14,13 @@ import Sidebar from './components/sidebar.vue';
 <style scoped>
 .app-container {
   display: flex;
-  height: 100vh; /* Full height of viewport */
+  height: 100vh; 
 }
 
 .main-content {
   flex-grow: 1;
   padding: 20px;
   overflow-y: auto;
-  margin-left: 250px; /* Makes space for sidebar */
+  margin-left: 250px; 
 }
 </style>
