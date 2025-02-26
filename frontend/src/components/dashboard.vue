@@ -98,7 +98,7 @@ const viewProduct = (product) => {
 <style scoped>
 .products-container {
   padding: 20px;
-  margin-left: 250px;
+  margin-left: 5px;
 }
 
 h1 {
