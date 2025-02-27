@@ -155,7 +155,7 @@ input:focus {
 }
 
 .login-btn:hover {
-  background: #5a67d8;
+  background: teal;
 }
 
 .login-btn:disabled {
