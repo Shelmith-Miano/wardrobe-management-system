@@ -32,7 +32,7 @@
         <span v-if="isLoading">Logging in...</span>
         <span v-else>Login</span>
       </button>
-      <p>Register Here</p>
+      <p></p>
 
       <p v-if="loginError" class="error-message">{{ loginError }}</p>
     </form>
